@@ -34,7 +34,8 @@ for i in range(0, len(md_docs)):
 # Save the Markdown document
 with open('md_docs.md', 'w') as f:
     f.write(md_docs[0].page_content)
-
+    
+#################################################################################
     
 from langchain.schema import Document
 
@@ -142,6 +143,7 @@ for doc in chunks_by_headers:
 with open('chunked_by_header_docs.txt', 'w') as f:
     f.write(chunks_by_headers_docs_file_content)
 
+#################################################################################
 
 import re
 from langchain.schema import Document
@@ -209,7 +211,7 @@ def split_chunk_by_tokens(content,  max_tokens):
         chunks.append(current_chunk.strip())
 
     return chunks
-###############################################################
+
 # Function to divide the Markdown documents into chunks based on token count
 def split_into_chunks_by_tokens(chunks, max_tokens):
     split_chunks = []
