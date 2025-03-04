@@ -34,7 +34,7 @@ for i in range(0, len(md_docs)):
 # Save the Markdown document
 with open('md_docs.md', 'w') as f:
     f.write(md_docs[0].page_content)
-    
+
 #################################################################################
     
 from langchain.schema import Document
@@ -159,9 +159,16 @@ def split_chunk_by_tokens(content,  max_tokens):
         if part.startswith('\n```'):
             final_parts.append(part.strip())   
         else:
-            #sub_parts = re.split(r'\.\s+|\n', part)             
+            """
+            sub_parts = re.split(r'(\.\s+|\n)', part)  # '. ' 또는 '\n'을 기준으로 분리하면서 구분자 유지
+            merged_parts = []
+            for i in range(0, len(sub_parts) - 1, 2):
+                merged_parts.append(sub_parts[i] + sub_parts[i + 1])
+            if len(sub_parts) % 2 == 1:
+                merged_parts.append(sub_parts[-1])
+            final_parts.extend([sub for sub in merged_parts if sub])  # 줄바꿈이 유지되도록 수정
+            """
             #sub_parts = part.split('\n')      
-            #final_parts.extend([sub.strip() for sub in sub_parts if sub.strip()])            
             sub_parts = re.split(r'(\.\s+)', part)  # '. ' 기준으로 문장 분리하되 구분자 유지
             merged_parts = []
             for i in range(0, len(sub_parts) - 1, 2):
