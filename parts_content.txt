@@ -1,0 +1,222 @@
+
+Block: 1
+Content:
+Now that you are about to write longer, more complex pieces of Python, it is a
+
+-------------
+
+Block: 2
+Content:
+good time to talk about *coding style*. Most languages can be written (or more
+
+-------------
+
+Block: 3
+Content:
+concise, *formatted*) in different styles; some are more readable than others.
+
+-------------
+
+Block: 4
+Content:
+Making it easy for others to read your code is always a good idea, and adopting
+
+-------------
+
+Block: 5
+Content:
+a nice coding style helps tremendously for that.
+
+-------------
+
+Block: 6
+Content:
+For Python, [**PEP 8**](https://peps.python.org/pep-0008/) has emerged as the style guide that most projects adhere to;
+
+-------------
+
+Block: 7
+Content:
+it promotes a very readable and eye\-pleasing coding style. Every Python
+
+-------------
+
+Block: 8
+Content:
+developer should read it at some point; here are the most important points
+
+-------------
+
+Block: 9
+Content:
+extracted for you:
+
+-------------
+
+Block: 10
+Content:
+* Use 4\-space indentation, and no tabs.
+
+-------------
+
+Block: 11
+Content:
+4 spaces are a good compromise between small indentation (allows greater
+
+-------------
+
+Block: 12
+Content:
+nesting depth) and large indentation (easier to read). Tabs introduce
+
+-------------
+
+Block: 13
+Content:
+confusion, and are best left out.
+
+-------------
+
+Block: 14
+Content:
+* Wrap lines so that they don’t exceed 79 characters.
+
+-------------
+
+Block: 15
+Content:
+This helps users with small displays and makes it possible to have several
+
+-------------
+
+Block: 16
+Content:
+code files side\-by\-side on larger displays.
+
+-------------
+
+Block: 17
+Content:
+* Use blank lines to separate functions and classes, and larger blocks of
+
+-------------
+
+Block: 18
+Content:
+code inside functions.
+
+-------------
+
+Block: 19
+Content:
+* When possible, put comments on a line of their own.
+
+-------------
+
+Block: 20
+Content:
+* Use docstrings.
+
+-------------
+
+Block: 21
+Content:
+* Use spaces around operators and after commas, but not directly inside
+
+-------------
+
+Block: 22
+Content:
+bracketing constructs: `a = f(1, 2) + g(3, 4)`.
+
+-------------
+
+Block: 23
+Content:
+* Name your classes and functions consistently; the convention is to use
+
+-------------
+
+Block: 24
+Content:
+`UpperCamelCase` for classes and `lowercase_with_underscores` for functions
+
+-------------
+
+Block: 25
+Content:
+and methods. Always use `self` as the name for the first method argument
+
+-------------
+
+Block: 26
+Content:
+(see [A First Look at Classes](classes.html#tut-firstclasses) for more on classes and methods).
+
+-------------
+
+Block: 27
+Content:
+* Don’t use fancy encodings if your code is meant to be used in international
+
+-------------
+
+Block: 28
+Content:
+environments. Python’s default, UTF\-8, or even plain ASCII work best in any
+
+-------------
+
+Block: 29
+Content:
+case.
+
+-------------
+
+Block: 30
+Content:
+* Likewise, don’t use non\-ASCII characters in identifiers if there is only the
+
+-------------
+
+Block: 31
+Content:
+slightest chance people speaking a different language will read or maintain
+
+-------------
+
+Block: 32
+Content:
+the code.
+
+-------------
+
+Block: 33
+Content:
+Footnotes
+
+-------------
+
+Block: 34
+Content:
+\[[1](#id1)]
+
+-------------
+
+Block: 35
+Content:
+Actually, *call by object reference* would be a better description,
+
+-------------
+
+Block: 36
+Content:
+since if a mutable object is passed, the caller will see any changes the
+
+-------------
+
+Block: 37
+Content:
+callee makes to it (items inserted into a list).
+
+-------------
