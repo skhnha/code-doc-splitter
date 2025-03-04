@@ -1,5 +1,5 @@
 # Code Documentation(Markdown) Splitter
-- Split process
+- splits.py
 1. split documentation to code block and text paragraph.
 2. split text paragraph into sentences.
 
